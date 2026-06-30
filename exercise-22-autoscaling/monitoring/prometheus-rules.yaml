@@ -1,0 +1,7 @@
+﻿groups:
+  - name: app-alert-rules
+    rules:
+      - alert: HighCPU
+        expr: container_cpu_usage_seconds_total > 0.8
+        for: 5m
+

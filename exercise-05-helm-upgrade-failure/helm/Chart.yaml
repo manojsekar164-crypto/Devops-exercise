@@ -1,0 +1,7 @@
+﻿apiVersion: v2
+name: exercise-05-helm-upgrade-failure
+description: Reusable helm chart for exercise-05-helm-upgrade-failure
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+

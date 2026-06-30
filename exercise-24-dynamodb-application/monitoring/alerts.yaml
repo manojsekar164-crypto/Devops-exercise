@@ -1,0 +1,6 @@
+﻿# Alertmanager config template
+route:
+  receiver: slack
+receivers:
+  - name: slack
+

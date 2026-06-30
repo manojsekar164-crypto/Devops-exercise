@@ -1,0 +1,7 @@
+﻿apiVersion: v2
+name: exercise-20-external-secrets
+description: Reusable helm chart for exercise-20-external-secrets
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+

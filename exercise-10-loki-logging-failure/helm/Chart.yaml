@@ -1,0 +1,7 @@
+﻿apiVersion: v2
+name: exercise-10-loki-logging-failure
+description: Reusable helm chart for exercise-10-loki-logging-failure
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+

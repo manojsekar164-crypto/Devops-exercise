@@ -1,0 +1,13 @@
+﻿apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: app-prometheusrule
+  namespace: default
+spec:
+  groups:
+    - name: app-alerts
+      rules:
+        - alert: ServiceDown
+          expr: up == 0
+          for: 1m
+

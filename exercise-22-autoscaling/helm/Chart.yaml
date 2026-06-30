@@ -1,0 +1,7 @@
+﻿apiVersion: v2
+name: exercise-22-autoscaling
+description: Reusable helm chart for exercise-22-autoscaling
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+

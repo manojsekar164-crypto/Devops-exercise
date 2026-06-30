@@ -1,0 +1,18 @@
+﻿# TEMPLATE: CronJob not active by default
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: backup-cron
+  namespace: default
+spec:
+  schedule: "0 0 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: backup
+              image: busybox
+              command: ["echo", "Backup complete"]
+          restartPolicy: OnFailure
+

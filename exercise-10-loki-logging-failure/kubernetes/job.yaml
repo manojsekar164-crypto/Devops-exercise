@@ -1,0 +1,15 @@
+﻿# TEMPLATE: Job not active by default
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: db-init
+  namespace: default
+spec:
+  template:
+    spec:
+      containers:
+        - name: init
+          image: busybox
+          command: ["echo", "Database initialized"]
+      restartPolicy: Never
+

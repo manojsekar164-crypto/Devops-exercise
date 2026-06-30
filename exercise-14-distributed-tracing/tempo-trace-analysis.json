@@ -1,0 +1,42 @@
+{
+  "traceId": "4c9472f10b27b3eb9687e145b23d941e",
+  "rootSpan": {
+    "name": "POST /checkout",
+    "serviceName": "checkout-service",
+    "durationMs": 4820,
+    "childSpans": [
+      {
+        "name": "check-inventory",
+        "serviceName": "inventory-service",
+        "durationMs": 350,
+        "childSpans": []
+      },
+      {
+        "name": "process-payment",
+        "serviceName": "payment-service",
+        "durationMs": 4250,
+        "childSpans": [
+          {
+            "name": "HTTP POST /v1/charge",
+            "serviceName": "payment-gateway-external",
+            "durationMs": 4120,
+            "status": "UNSET",
+            "attributes": {
+              "http.url": "https://api.external-gateway.com/v1/charge",
+              "http.status_code": 200,
+              "error.message": "timeout warning - delayed response from gateway"
+            }
+          },
+          {
+            "name": "update-payment-status",
+            "serviceName": "postgresql-db",
+            "durationMs": 80,
+            "attributes": {
+              "db.statement": "UPDATE transactions SET status = 'completed' WHERE id = ?"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

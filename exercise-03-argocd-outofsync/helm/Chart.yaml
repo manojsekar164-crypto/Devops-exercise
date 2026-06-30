@@ -1,0 +1,7 @@
+﻿apiVersion: v2
+name: exercise-03-argocd-outofsync
+description: Reusable helm chart for exercise-03-argocd-outofsync
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+

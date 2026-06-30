@@ -1,0 +1,18 @@
+﻿apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: exercise-10-loki-logging-failure-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/tharaneshtharanesh431-design/DevOps_26_Exercises.git
+    targetRevision: HEAD
+    path: exercise-10-loki-logging-failure/helm
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

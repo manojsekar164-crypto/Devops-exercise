@@ -1,0 +1,22 @@
+{
+  "kind": "KubeletConfiguration",
+  "apiVersion": "kubelet.config.k8s.io/v1beta1",
+  "containerLogMaxSize": "10Mi",
+  "containerLogMaxFiles": 5,
+  "evictionHard": {
+    "imagefs.available": "15%",
+    "memory.available": "100Mi",
+    "nodefs.available": "10%",
+    "nodefs.inodesFree": "5%"
+  },
+  "evictionSoft": {
+    "imagefs.available": "20%",
+    "memory.available": "200Mi",
+    "nodefs.available": "15%"
+  },
+  "evictionSoftGracePeriod": {
+    "imagefs.available": "2m",
+    "memory.available": "1m",
+    "nodefs.available": "2m"
+  }
+}

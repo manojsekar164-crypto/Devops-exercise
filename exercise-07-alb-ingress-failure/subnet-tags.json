@@ -1,0 +1,22 @@
+{
+  "public_subnets": [
+    {
+      "Key": "kubernetes.io/role/elb",
+      "Value": "1"
+    },
+    {
+      "Key": "kubernetes.io/cluster/my-eks-cluster",
+      "Value": "shared"
+    }
+  ],
+  "private_subnets": [
+    {
+      "Key": "kubernetes.io/role/internal-elb",
+      "Value": "1"
+    },
+    {
+      "Key": "kubernetes.io/cluster/my-eks-cluster",
+      "Value": "shared"
+    }
+  ]
+}

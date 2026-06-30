@@ -1,0 +1,7 @@
+﻿apiVersion: v2
+name: exercise-07-alb-ingress-failure
+description: Reusable helm chart for exercise-07-alb-ingress-failure
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+

@@ -1,0 +1,7 @@
+﻿apiVersion: v2
+name: exercise-24-dynamodb-application
+description: Reusable helm chart for exercise-24-dynamodb-application
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+

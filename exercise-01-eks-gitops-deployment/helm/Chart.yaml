@@ -1,0 +1,7 @@
+﻿apiVersion: v2
+name: exercise-01-eks-gitops-deployment
+description: Reusable helm chart for exercise-01-eks-gitops-deployment
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+

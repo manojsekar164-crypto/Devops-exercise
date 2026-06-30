@@ -1,0 +1,7 @@
+﻿apiVersion: v2
+name: exercise-02-irsa-troubleshooting
+description: Reusable helm chart for exercise-02-irsa-troubleshooting
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+

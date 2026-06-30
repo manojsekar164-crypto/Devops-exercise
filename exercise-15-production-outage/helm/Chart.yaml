@@ -1,0 +1,7 @@
+﻿apiVersion: v2
+name: exercise-15-production-outage
+description: Reusable helm chart for exercise-15-production-outage
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+

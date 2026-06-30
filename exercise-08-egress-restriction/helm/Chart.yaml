@@ -1,0 +1,7 @@
+﻿apiVersion: v2
+name: exercise-08-egress-restriction
+description: Reusable helm chart for exercise-08-egress-restriction
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+

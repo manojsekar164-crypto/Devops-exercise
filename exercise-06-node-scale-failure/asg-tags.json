@@ -1,0 +1,12 @@
+[
+  {
+    "Key": "k8s.io/cluster-autoscaler/enabled",
+    "Value": "true",
+    "PropagateAtLaunch": true
+  },
+  {
+    "Key": "k8s.io/cluster-autoscaler/my-eks-cluster",
+    "Value": "owned",
+    "PropagateAtLaunch": true
+  }
+]

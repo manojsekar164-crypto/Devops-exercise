@@ -1,0 +1,7 @@
+﻿apiVersion: v2
+name: exercise-26-s3-backup
+description: Reusable helm chart for exercise-26-s3-backup
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+

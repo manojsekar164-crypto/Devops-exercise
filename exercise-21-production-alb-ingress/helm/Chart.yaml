@@ -1,0 +1,7 @@
+﻿apiVersion: v2
+name: exercise-21-production-alb-ingress
+description: Reusable helm chart for exercise-21-production-alb-ingress
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+
